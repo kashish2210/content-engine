@@ -34,7 +34,7 @@ These secrets are highly recommended to add for your specific project.
 
 #### Optional Secrets:
 If you need more advanced usage, consider adding these secrets to modify how your project works.
-- `BUILDPACK_BUILDER`: The buildpack builder to use. Defaults to 'heroku/buildpacks:22' if not set. Review various Heroku buildpacks [here](https://devcenter.heroku.com/articles/stack#stack-support-details)
+- `BUILDPACK_BUILDER`: The buildpack builder to use. Defaults to `gcr.io/buildpacks/builder:google-22` if not set. Review the available Google Cloud Buildpacks [here](https://cloud.google.com/docs/buildpacks/builders)
 - `DOCKER_HUB_IMAGE_TAG`: The tag to use for the Docker image. Defaults to the commit SHA (recommended) or you can set this value yourself.
 
 ### 3. Required Files
@@ -52,8 +52,8 @@ name = "DISABLE_COLLECTSTATIC"
 value = "1"
 
 [[build.env]]
-name =  "GOOGLE_RUNTIME_VERSION"
-value = "3.11.7"
+name = "GOOGLE_PYTHON_VERSION"
+value = "3.11.x"
 
 [[build.env]]
 name = "GOOGLE_ENTRYPOINT"
