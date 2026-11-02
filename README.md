@@ -71,6 +71,9 @@ gunicorn
 
 ### 4. Push
 
+The GitHub Actions workflow runs automatically on every push to any branch. It can also
+be triggered by pull requests targeting `main` or started manually from the Actions tab.
+
 Push your code to GitHub and watch the magic happen. You can view the workflow in the "Actions" tab of your GitHub repo.
 
 ### 5. Run
